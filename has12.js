@@ -7,3 +7,11 @@
 // has12([1, 3, 2]) → true
 // has12([3, 1, 2]) → true
 // has12([3, 1, 4, 5, 2]) → true
+
+function has12(nums){
+    for(let i = 0; i < nums.length;i++){
+        if(nums[i] === 1 || nums[i]=== 2){
+            return 'true'
+        }
+    }return 'false'
+  }console.log(has12([3,1,2]));
