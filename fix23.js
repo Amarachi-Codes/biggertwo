@@ -7,3 +7,13 @@
 // fix23([1, 2, 3]) → 1,2,0
 // fix23([2, 3, 5]) → 2,0,5
 // fix23([1, 2, 1]) → 1,2,1
+
+function fix23(nums){
+    for(let i = 0; i < nums.length;i++){
+        if(nums[i] === 2 && nums[i+ 1] === 3){
+            nums[i + 1] = 0
+        }
+    }return nums
+}console.log(fix23([1, 2, 1]));
+
+
